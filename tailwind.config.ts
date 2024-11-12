@@ -27,7 +27,7 @@ const config: Config = {
             },
             animation:{
                 "ping-large": "ping-large 1s ease-in-out infinite",
-                "ping-small": "ping-small 5s ease-in-out infinite"
+                "ping-small": "ping-small 1s ease-in-out infinite"
 
             },
             keyframes: {
