@@ -25,9 +25,10 @@ const config: Config = {
                 sans: "var(--font-sans)",
                 serif: "var(--font-serif)",
             },
-            animation:{
+            animation: {
                 "ping-large": "ping-large 1s ease-in-out infinite",
-                "ping-small": "ping-small 1s ease-in-out infinite"
+                "ping-small": "ping-small 1s ease-in-out infinite",
+                "move-left": "move-left 1s linear infinite ",
 
             },
             keyframes: {
@@ -41,6 +42,14 @@ const config: Config = {
                     "65%, 100%": {
                         transform: "scale(1)",
                         opacity: "0",
+                    }
+                },
+                "move-left": {
+                    "0%": {
+                        transform: "translateX(0%)",
+                    },
+                    "100%": {
+                        transform: "translateX(-50%)",
                     }
                 }
             }
