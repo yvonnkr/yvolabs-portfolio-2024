@@ -59,7 +59,9 @@ export const ProjectsSection = () => {
                 <div className="mt-10 md:mt-20 flex flex-col gap-20">
                     {portfolioProjects.map((project, projectIndex) => (
                         <Card key={project.title}
-                              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16"
+                              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16
+                               transition duration-300 hover:scale-105 hover:-translate-y-2 ease-in-out
+                              "
                               style={{
                                   top: `calc(64px + ${projectIndex * 40}px )`
                               }}
